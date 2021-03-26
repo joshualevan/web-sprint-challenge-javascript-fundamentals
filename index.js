@@ -136,7 +136,7 @@ console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice t
 
 // 🦁💪 Stretch: If you haven't already, convert your array method callbacks into arrow functions - make sure you comment out this section before you submit your work 🦁💪
 
-
+// ^^^^^ SEE PREVIOUS FOR CONVERTED FUNCTIONS ^^^^^
 
 
 
@@ -145,9 +145,12 @@ console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice t
 /* 🐴🐴🐴 Step 1: Base Constructor 🐴🐴🐴
  Use the constructor function named CuboidMaker to accept properties for length, width, and height which can be initialized as an object
 */
-function CuboidMaker( /*Your Code Here */ ) {
-    /*Your Code Here */
+function CuboidMaker(obj) {
+    this.length = obj.length;
+    this.width = obj.width;
+    this.height = obj.height;
 }
+
 
 
 /* 🐴🐴🐴 Step 2: Volume Method 🐴🐴🐴
