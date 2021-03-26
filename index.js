@@ -97,8 +97,10 @@ Remember the reduce method takes two arguments: a callback (which itself takes t
 */
 
 function USApop(arr) {
-    return arr.reduce((total, animal) => total + animal.population);
+    return arr.reduce((total, pop) => { return total + pop.population }, 0);
 }
+
+console.log(USApop(zooAnimals));
 
 
 // 🦁🦁🦁 Callbacks 🦁🦁🦁  
@@ -109,8 +111,8 @@ function USApop(arr) {
  * The consume function should return the invocation of cb, passing a and b into cb as arguments
  */
 
-function consume( /*Your Code Here */ ) {
-    /*Your Code Here */
+function consume(a, b, cb) {
+    return cb(a, b);
 }
 
 
