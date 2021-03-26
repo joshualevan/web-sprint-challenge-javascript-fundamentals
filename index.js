@@ -75,8 +75,8 @@ Using lowerCaseNames use .map() to create a new array of strings with the animal
 For example: ['jackal, asiatic', .....]
 */
 
-function lowerCaseNames( /*Your Code Here*/ ) {
-    /*Your Code Here*/
+function lowerCaseNames(arr) {
+    return arr.map(animal => animal.animal_name.toLowerCase());
 }
 
 
